@@ -9,8 +9,7 @@ function MainContent() {
     >
       <h2 style={{ color: '#333' }}>Welcome to the App</h2>
       <p style={{ lineHeight: '1.6' }}>
-        This application showcases inline styling, state, routing, and other
-        core React concepts.
+        I love to visit New York, Paris, and Tokyo.
       </p>
     </main>
   );
