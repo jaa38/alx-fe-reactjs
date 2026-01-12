@@ -17,8 +17,19 @@ function Counter() {
         Current Count: {count}
       </p>
 
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(0)}>Reset</button>
+      <button 
+        onClick={() => setCount(count + 1)}
+        style={{marginRight: '10px'}}
+      >Increment</button>
+
+      <button 
+        onClick={() => setCount(count - 1)}
+        style={{marginRight: '10px'}}
+      >Decrement</button>
+
+      <button 
+        onClick={() => setCount(0)}
+      >Reset</button>
     </div>
   );
 }
