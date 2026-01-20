@@ -1,11 +1,15 @@
-import { Routes, Route } from 'react-router-dom';
+import { Router, Routes, Route } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+
 import RecipeList from './components/RecipeList';
 import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
 
+const history = createBrowserHistory();
+
 function App() {
   return (
-    <div>
+    <Router history={history}>
       <h1>Recipe Sharing App</h1>
 
       <Routes>
@@ -24,7 +28,7 @@ function App() {
           element={<RecipeDetails />}
         />
       </Routes>
-    </div>
+    </Router>
   );
 }
 
